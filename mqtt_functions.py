@@ -48,7 +48,7 @@ def on_message(client, userdata, msg):
             if widget and root_ref: # Check if both widget and root exist
                 print("Debug: Widget and root exist, scheduling flash...") # Add this
                 # Pass the specific widget to flash_widget_bg
-                root_ref.after(0, lambda w=widget: multi_flash_widget_bg(w, flash_color="yellow", original_color="lightgray", flashes=3, duration=400))
+                root_ref.after(0, lambda w=widget: multi_flash_widget_bg(w, flash_color="SpringGreen4", original_color="lightgray", flashes=3, duration=400))
             else:
                 # Add this else block for diagnosis
                 print(f"Debug: Flash NOT scheduled. Widget found: {bool(widget)}, Root found: {bool(root_ref)}")
@@ -60,7 +60,7 @@ def on_message(client, userdata, msg):
             var.set(payload)
             # Schedule the flash for the specific widget
             if widget and refs.get("root"):
-                refs.get("root").after(0, lambda w=widget: multi_flash_widget_bg(w, flash_color="yellow", original_color="lightgray", flashes=3, duration=400))
+                refs.get("root").after(0, lambda w=widget: multi_flash_widget_bg(w, flash_color="SpringGreen4", original_color="lightgray", flashes=3, duration=400))
 
     elif topic == "tennis/scoreboard/team1_games":
         var_prefix = "var_sets"

@@ -8,7 +8,7 @@ root.title("Tennis Scoreboard")
 base_width = 1300
 base_height = 800
 root.geometry(f"{base_width}x{base_height}")
-root.configure(bg="darkgreen")
+root.configure(bg="DarkOrchid4")
 
 # --- Variables for every white box ---
 team1_points = tk.StringVar(value="")
@@ -99,7 +99,7 @@ tk.Label(
     text="Tennis Scoreboard",
     font=("Helvetica", 32),
     fg="white",
-    bg="darkgreen"
+    bg="DarkOrchid4"
 ).place(relx=650/base_width, rely=30/base_height, anchor="n")  # (0.5, ~0.0375)
 
 # --- Top‑Left: “Points” & two boxes ---
@@ -108,7 +108,7 @@ tk.Label(
     text="Points",
     font=("Helvetica", 20),
     fg="white",
-    bg="darkgreen"
+    bg="DarkOrchid4"
 ).place(relx=130/base_width, rely=85/base_height, anchor="nw")
 
 # Big grey box for team1_points
@@ -139,7 +139,7 @@ tk.Label(
     text="Player 1",
     font=("Helvetica", 20),
     fg="white",
-    bg="darkgreen"
+    bg="DarkOrchid4"
 ).place(relx=330/base_width, rely=150/base_height, anchor="nw")
 
 # Small box & “Player 2”
@@ -157,7 +157,7 @@ tk.Label(
     text="Player 2",
     font=("Helvetica", 20),
     fg="white",
-    bg="darkgreen"
+    bg="DarkOrchid4"
 ).place(relx=330/base_width, rely=200/base_height, anchor="nw")
 
 # --- Top‑Right: “Sets” using 5 separate boxes ---
@@ -166,7 +166,7 @@ tk.Label(
     text="Sets",
     font=("Helvetica", 20),
     fg="white",
-    bg="darkgreen"
+    bg="DarkOrchid4"
 ).place(relx=955/base_width, rely=80/base_height, anchor="nw")
 
 # Individual set boxes for team 1 (top-right)
@@ -227,7 +227,7 @@ for i in range(5):
         text=str(i+1),
         font=("Helvetica", 16),
         fg="white",
-        bg="darkgreen"
+        bg="DarkOrchid4"
     ).place(relx=(830 + i*80)/base_width, rely=120/base_height, anchor="n")
 
 # --- Center: Serve vs Match Time ---
@@ -236,14 +236,14 @@ tk.Label(
     text="Serve",
     font=("Helvetica", 20),
     fg="white",
-    bg="darkgreen"
+    bg="DarkOrchid4"
 ).place(relx=270/base_width, rely=330/base_height, anchor="nw")
 tk.Label(
     root,
     text="vs",
     font=("Helvetica", 20),
     fg="white",
-    bg="darkgreen"
+    bg="DarkOrchid4"
 ).place(relx=370/base_width, rely=330/base_height, anchor="nw")
 
 tk.Label(
@@ -251,7 +251,7 @@ tk.Label(
     text="Match Time",
     font=("Helvetica", 20),
     fg="white",
-    bg="darkgreen"
+    bg="DarkOrchid4"
 ).place(relx=560/base_width, rely=290/base_height, anchor="nw")
 
 # Create the clock label
@@ -292,7 +292,7 @@ tk.Label(
     text="Player 3",
     font=("Helvetica", 20),
     fg="white",
-    bg="darkgreen"
+    bg="DarkOrchid4"
 ).place(relx=330/base_width, rely=470/base_height, anchor="nw")
 
 tk.Label(
@@ -309,7 +309,7 @@ tk.Label(
     text="Player 4",
     font=("Helvetica", 20),
     fg="white",
-    bg="darkgreen"
+    bg="DarkOrchid4"
 ).place(relx=330/base_width, rely=520/base_height, anchor="nw")
 
 # --- Bottom‑Right: “1–5” + long sets‑box for team 2 ---
@@ -369,7 +369,7 @@ for i in range(5):
         text=str(i+1),
         font=("Helvetica", 16),
         fg="white",
-        bg="darkgreen"
+        bg="DarkOrchid4"
     ).place(relx=(830 + i*80)/base_width, rely=420/base_height, anchor="n")
 
 # --- Bottom Controls (Buttons) ---
