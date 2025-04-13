@@ -1,0 +1,29 @@
+# Python bytecode cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+venv.bak/
+env.bak/
+
+# Distribution / packaging
+.eggs/
+*.egg-info/
+dist/
+build/
+wheels/
+*.egg
+
+# IDE / Editor Folders
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
